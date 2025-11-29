@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyomino Enumeration Web Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Polyomino Enumeration Viewer</h1>
+
+        <div class="input-group">
+            <label for="datasetSelect">Select Dataset:</label>
+            <select id="datasetSelect"></select>
+        </div>
+
+        <p id="totalShapes">Total Unique Shapes: Loading...</p>
+
+        <div class="input-group">
+            <label for="shapeIdInput">Enter Shape ID:</label>
+            <input type="number" id="shapeIdInput" min="1" value="1" placeholder="Enter ID 1 to N">
+            <button id="loadButton">Search & Load</button>
+        </div>
+
+        <p id="message" class="status-message">Initializing...</p>
+
+        <div class="canvas-container">
+            <canvas id="shapeCanvas" width="600" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
