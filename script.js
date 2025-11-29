@@ -116,7 +116,7 @@ async function loadAndDrawShape() {
 
     // --- Lookup Logic: Calculate Chunk ID ---
     const chunkIndex = Math.ceil(shapeId / SHAPES_PER_CHUNK);
-    const chunkUrl = `./${activeDataFolder}/chunks/chunk_${chunkIndex}.jsonl`;
+    const chunkUrl = `./${activeDataFolder}/chunks/chunk_${chunkIndex}.json`;
 
     try {
         // Step 1: Fetch the entire JSONL chunk file

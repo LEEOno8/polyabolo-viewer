@@ -5,8 +5,8 @@ import time
 
 # --- 配置 ---
 # 请将此名称修改为你的实际 TXT 文件名
-INPUT_FILENAME = "1114_final_Qing_shapes.txt"
-OUTPUT_DIR = "web_data_set2"  # 输出目录
+INPUT_FILENAME = "all_unique_final_shapes.txt"
+OUTPUT_DIR = "web_data"  # 输出目录
 SHAPES_PER_CHUNK = 100000  # 1000,000 个图形一份
 
 
@@ -37,7 +37,7 @@ def parse_shape_blocks(lines):
 
 def write_chunk(index, data, data_dir):
     """ 将一个分块的数据写入 JSONL 文件。"""
-    output_filename = os.path.join(data_dir, f"chunk_{index}.jsonl")
+    output_filename = os.path.join(data_dir, f"chunk_{index}.json")
     try:
         with open(output_filename, 'w', encoding='utf-8') as f:
             for shape in data:
