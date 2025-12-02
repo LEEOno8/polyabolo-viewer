@@ -5,8 +5,8 @@ import time
 
 # --- 配置 ---
 # 请将此名称修改为你的实际 TXT 文件名
-INPUT_FILENAME = "all_unique_final_shapes.txt"
-OUTPUT_DIR = "web_data"  # 输出目录
+INPUT_FILENAME = "1201_final_polyabolo__shapes.txt"
+OUTPUT_DIR = "web_data_set3"  # 输出目录
 SHAPES_PER_CHUNK = 100000  # 1000,000 个图形一份
 
 

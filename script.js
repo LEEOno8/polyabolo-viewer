@@ -3,6 +3,7 @@
 const DATASETS = {
     'Set 1 (Tangrams)': 'web_data',
     'Set 2 (Sei Shonagon chie-no-ita)': 'web_data_set2', // <--- Change this name if your new folder is different
+    'Set 3 (n=16 polyabolo)': 'web_data_set3',
     // Add more datasets here: 'Display Name': 'folder_name'
 };
 const SHAPES_PER_CHUNK = 100000; // Must match Python script setting
